@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOW TV</title>
+    <link rel="stylesheet" href="../css/design.css" />
+    <link
+      rel="shortcut icon"
+      href="../ressources/logo/logo-show.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="../js/jquery.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/filtres.js" defer></script>
+    <script src="../js/forms.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <i class="ri-menu-line"></i>
+        <a href="../index.html">
+          <div class="logo">
+            <div class="logo-img">
+              <img src="../ressources/logo/logo-show.png" alt="" />
+            </div>
+            <h1 class="logo-txt">Show TV</h1>
+          </div>
+        </a>
+      </div>
+      <div class="profile-container">
+        <i class="ri-video-add-line"></i>
+        <i class="ri-grid-fill"></i>
+        <i class="ri-notification-4-line"></i>
+        <div class="profile-box">
+          <img
+            class="img-profile"
+            src="../ressources/logo/logo-upsud.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="body-container">
+      <div class="sidebar">
+        <div class="sidebar-items">
+          <h4 class="more">More from ShowTV</h4>
+          <a href="./index.html" class="sidebar-item">
+            <i class="ri-home-4-line"></i>Accueil
+          </a>
+          <hr />
+          <a href="./1-comediens.html" class="sidebar-item">
+            <i class="ri-team-line"></i>Comédiens
+          </a>
+          <hr />
+          <a href="./2-staff.html" class="sidebar-item">
+            <i class="ri-group-2-fill"></i>Staff
+          </a>
+          <hr />
+          <a href="./3-betisier.html" class="sidebar-item">
+            <i class="ri-emotion-laugh-line"></i>Bétisiers
+          </a>
+          <hr />
+          <a href="./5-contact.html" class="sidebar-item">
+            <i class="ri-mail-send-line"></i>Contact
+          </a>
+          <hr />
+          <a href="./6-suggestions.html" class="sidebar-item">
+            <i class="ri-tools-line"></i>Suggestions maintenance
+          </a>
+          <hr />
+        </div>
+      </div>
+      <div class="content center">
+        <div class="contact">
+          <form
+            action="https://formsubmit.co/pro.picsandchill@gmail.com"
+            method="POST"
+          >
+            <h1 class="titre">Contact</h1>
+            <hr class="line" />
+            <label class="libelle" for="name">Nom et prénom</label>
+            <input
+              type="text"
+              placeholder=""
+              name="name"
+              id="name"
+              autocomplete="off"
+              required
+            />
+            <hr class="line" />
+            <label class="libelle" for="email">E-mail</label>
+            <input
+              type="email"
+              placeholder=""
+              name="email"
+              autocomplete="off"
+              id="email"
+              required
+            />
+            <hr class="line" />
+            <label class="libelle" for="email">Objet</label>
+            <input
+              type="text"
+              placeholder=""
+              name="subject"
+              autocomplete="off"
+              id="subject"
+              required
+            />
+            <hr class="line" />
+            <label class="libelle" for="msg">Contenu du message</label>
+            <textarea
+              placeholder=""
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <hr class="line" />
+            <button id="btn-envoyer-c" type="submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
