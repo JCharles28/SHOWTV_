@@ -725,6 +725,7 @@ form {
     padding: 10px;
     min-height: 150px;
     margin-top: 30px;
+    width: 475px;
   }
 
   .description-text {
@@ -767,6 +768,7 @@ form {
     padding: 10px;
     min-height: 150px;
     margin: 30px 0;
+    width: 475px;
   }
 
   .description-text {
@@ -803,6 +805,7 @@ form {
   .description-container {
     padding: 8px;
     min-height: 150px;
+    width: 375px;
   }
 
   .description-text {
@@ -849,7 +852,6 @@ form {
 }
 
 @media (max-width: 420px) {
-
   .video-container {
     grid-template-columns: 1fr;
   }
@@ -869,11 +871,12 @@ form {
     padding: 6px;
     min-height: 100px;
     max-width: 300px;
+    width: 300px;
   }
 
   .description-text {
     font-size: 8px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   /* header */
@@ -912,11 +915,9 @@ form {
     margin-bottom: 35px;
     width: 100%;
   }
-
 }
 
 @media (max-width: 375px) {
-
   .video-ctn {
     width: 225px;
   }
@@ -936,5 +937,4 @@ form {
     font-size: 8px;
     font-weight: 500;
   }
-
 }
