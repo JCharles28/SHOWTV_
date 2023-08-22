@@ -503,7 +503,7 @@ hr {
   margin-left: 5%; */
 }
 
-video {
+.video {
   object-fit: cover;
   border-radius: 5px;
   border: 2.2px solid whitesmoke;
@@ -716,7 +716,7 @@ form {
     
   }
 
-  video {
+  .video {
     height: 220px;
     width: 420px;
   }
@@ -758,7 +758,7 @@ form {
 
   }
 
-  video {
+  .video {
     height: 220px;
     width: 420px;
   }
@@ -795,7 +795,7 @@ form {
     display: none;
   }
 
-  video {
+  .video {
     height: 175px;
     width: 375px;
   }
@@ -857,7 +857,7 @@ form {
     display: none;
   }
 
-  video {
+  .video {
     height: 175px;
     width: 375px;
   }
