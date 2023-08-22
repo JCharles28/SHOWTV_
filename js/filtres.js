@@ -1,58 +1,61 @@
-// évenements de filtres
-
-$("#AaZ").click(function () {
-  let tabItems = Array.from($(".item"));
-  let tab = $(tabItems);
+document.getElementById("AaZ").addEventListener("click", function () {
+  let tabItems = Array.from(document.querySelectorAll(".item"));
+  let tab = tabItems.map(item => item.cloneNode(true));
 
   tab.sort((a, b) => {
-    let titre1 = $(a).find(".title").text();
-    let titre2 = $(b).find(".title").text();
+    let titre1 = a.querySelector(".title").textContent;
+    let titre2 = b.querySelector(".title").textContent;
 
     return titre1.localeCompare(titre2);
   });
 
-  $(".video-container").append(tab);
-  tab.detach();
-  $(".video-container").append(tab);
+  let videoContainer = document.querySelector(".video-container");
+  tab.forEach(item => videoContainer.appendChild(item));
+  tab.forEach(item => item.remove());
+  tab.forEach(item => videoContainer.appendChild(item));
 });
 
-$("#ZaA").click(function () {
-  let tabItems = Array.from($(".item"));
-  let tab = $(tabItems);
+document.getElementById("ZaA").addEventListener("click", function () {
+  let tabItems = Array.from(document.querySelectorAll(".item"));
+  let tab = tabItems.map(item => item.cloneNode(true));
 
   tab.sort((a, b) => {
-    let titre1 = $(a).find(".title").text();
-    let titre2 = $(b).find(".title").text();
+    let titre1 = a.querySelector(".title").textContent;
+    let titre2 = b.querySelector(".title").textContent;
 
     return titre2.localeCompare(titre1);
   });
 
-  $(".video-container").append(tab);
-  tab.detach();
-  $(".video-container").append(tab);
+  let videoContainer = document.querySelector(".video-container");
+  tab.forEach(item => videoContainer.appendChild(item));
+  tab.forEach(item => item.remove());
+  tab.forEach(item => videoContainer.appendChild(item));
 });
 
-$("#femmes").click(function () {
-  let tabItems = Array.from($(".item"));
-  let tab = $(tabItems);
+document.getElementById("femmes").addEventListener("click", function () {
+  let tabItems = Array.from(document.querySelectorAll(".item"));
+  let tab = tabItems.map(item => item.cloneNode(true));
 
-  let tabItemsF = Array.from($(".f"));
-  tabF = $(tabItemsF);
+  let tabItemsF = Array.from(document.querySelectorAll(".f"));
+  let tabF = tabItemsF.map(item => item.cloneNode(true));
 
-  $(".video-container").append(tab);
-  tab.detach();
-  $(".video-container").append(tabF);
+  let videoContainer = document.querySelector(".video-container");
+  tab.forEach(item => videoContainer.appendChild(item));
+  tab.forEach(item => item.remove());
+  tabF.forEach(item => videoContainer.appendChild(item));
 });
 
 function hommes_tri() {
-    let tabItems = Array.from($(".item"));
-    let tab = $(tabItems);
-  
-    let tabItemsH = Array.from($(".h"));
-    tabH = $(tabItemsH);
+  let tabItems = Array.from(document.querySelectorAll(".item"));
+  let tab = tabItems.map(item => item.cloneNode(true));
 
-    $(".video-container").append(tab);
-    tab.detach();
-    $(".video-container").append(tabH);
-  }
-$("#hommes").click(hommes_tri);
+  let tabItemsH = Array.from(document.querySelectorAll(".h"));
+  let tabH = tabItemsH.map(item => item.cloneNode(true));
+
+  let videoContainer = document.querySelector(".video-container");
+  tab.forEach(item => videoContainer.appendChild(item));
+  tab.forEach(item => item.remove());
+  tabH.forEach(item => videoContainer.appendChild(item));
+}
+
+document.getElementById("hommes").addEventListener("click", hommes_tri);
