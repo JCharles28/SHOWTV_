@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOW TV</title>
+
+    <link type="text/css" rel="stylesheet" href="css/design.css" />
+    <link
+      rel="shortcut icon"
+      href="ressources/logo/logo-show.png"
+      type="image/x-icon"
+    /> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="./js/jquery.js" defer></script>
+    <script src="./js/filtres.js" defer></script>
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <i class="ri-menu-line"></i>
+        <a href="./index.html">
+          <div class="logo">
+            <div class="logo-img">
+              <img src="ressources/logo/logo-show.png" alt="" />
+            </div>
+            <h1 class="logo-txt">Show TV</h1>
+          </div>
+        </a>
+      </div>
+      <!-- <div class="search-container">
+        <form action="">
+          <input class="input-search" type="text" placeholder="Search" />
+        </form>
+        <button class="search search-anim">
+          <i class="ri-search-line"></i>
+        </button>
+        <button class="mic mic-anim">
+          <i class="ri-mic-fill"></i>
+        </button>
+      </div> -->
+      <div class="profile-container">
+        <i class="ri-video-add-line"></i>
+        <i class="ri-grid-fill"></i>
+        <i class="ri-notification-4-line"></i>
+        <div class="profile-box">
+          <img
+            class="img-profile"
+            src="ressources/logo/logo-upsud.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div class="sidebar">
+        <div class="sidebar-items">
+          <h4 class="more">More from ShowTV</h4>
+          <a href="./index.html" class="sidebar-item">
+            <i class="ri-home-4-line"></i>Accueil
+          </a>
+          <hr />
+          <a href="html/1-comediens.html" class="sidebar-item">
+            <i class="ri-team-line"></i>Comédiens
+          </a>
+          <hr />
+          <a href="html/2-staff.html" class="sidebar-item">
+            <i class="ri-group-2-fill"></i>Staff
+          </a>
+          <hr />
+          <a href="#" class="sidebar-item">
+            <i class="ri-emotion-laugh-line"></i>Bétisiers
+          </a>
+          <!-- <hr />
+          <a href="#" class="sidebar-item">
+            <i class="ri-calendar-check-line"></i>Calendrier
+          </a> -->
+          <hr />
+          <a href="#" class="sidebar-item">
+            <i class="ri-mail-send-line"></i>Contact
+          </a>
+          <hr />
+          <a href="#" class="sidebar-item">
+            <i class="ri-tools-line"></i>Suggestions maintenance
+          </a>
+          <hr />
+        </div>
+      </div>
+      <div class="content">
+        <div class="chips-wrapper">
+          <div id="AaZ" class="chip">
+            <p>A à Z</p>
+          </div>
+
+          <div id="ZaA" class="chip">
+            <p>Z à A</p>
+          </div> 
+
+          <!-- <div id="femmes" class="chip">
+            <p>Femmes</p>
+          </div>
+
+          <div id="hommes" class="chip">
+            <p>Hommes</p>
+          </div>
+
+          <div id="CaL" class="chip">
+            <p>Par durée : plus court à plus long</p>
+          </div>
+
+          <div id="LaC" class="chip">
+            <p>Par durée : plus long à plus court</p>
+          </div> -->
+
+        </div>
+
+        <div class="video-container">
+
+      <a class="item h" href="./html/page-video/p-alias.html"
+        ><div class="video-content-cover">
+          <div class="video-content">
+            <div class="video-box">
+              <img src="ressources/images/alias.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="channel-logo">
+                <img src="" alt="" />
+              </div>
+              <div class="detail">
+                <h3 class="title">Alias - Interview 2022/23</h3>
+                <div class="channel-name">IUT d'Orsay</div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      
+      <a class="item f" href="./html/page-video/p-louise.html">
+        <div class="video-content-cover">
+        <div class="video-content">
+          <div class="video-box">
+            <img src="ressources/images/louise.jpg" alt="" />
+          </div>
+          <div class="video-details">
+            <div class="channel-logo">
+              <img src="" alt="" />
+            </div>
+            <div class="detail">
+              <h3 class="title">Louise - Interview 2022/23</h3>
+              <div class="channel-name">IUT d'Orsay</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a class="item h" href="./html/page-video/p-warren.html">
+        <div class="video-content-cover">
+          <div class="video-content">
+            <div class="video-box">
+              <img src="ressources/images/warren.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="channel-logo">
+                <img src="" alt="" />
+              </div>
+              <div class="detail">
+                <h3 class="title">Warren - Interview 2022/23</h3>
+                <div class="channel-name">IUT d'Orsay</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="item h" href="./html/page-video/p-andrei.html">
+        <div class="video-content-cover">
+          <div class="video-content">
+            <div class="video-box">
+              <img src="ressources/images/andrei.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="channel-logo">
+                <img src="" alt="" />
+              </div>
+              <div class="detail">
+                <h3 class="title">Andrei - Interview 2022/23</h3>
+                <div class="channel-name">IUT d'Orsay</div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="item f" href="./html/page-video/p-cidney.html">
+        <div class="video-content-cover">
+          <div class="video-content">
+            <div class="video-box">
+              <img src="ressources/images/cidney.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="channel-logo">
+                <img src="" alt="" />
+              </div>
+              <div class="detail">
+                <h3 class="title">Cidney - Interview 2022/23</h3>
+                <div class="channel-name">IUT d'Orsay</div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="item f" href="./html/page-video/p-serine.html">
+          <div class="video-content-cover">
+            <div class="video-content">
+              <div class="video-box">
+                <img src="ressources/images/serine.jpg" alt="" />
+              </div>
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="" alt="" />
+                </div>
+                <div class="detail">
+                  <h3 class="title">Sérine - Interview 2022/23</h3>
+                  <div class="channel-name">IUT d'Orsay</div>
+     
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      <a class="item h" href="./html/page-video/p-nicolas.html">
+          <div class="video-content-cover">
+            <div class="video-content">
+              <div class="video-box">
+                <img src="ressources/images/nicolas.jpg" alt="" />
+              </div>
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="" alt="" />
+                </div>
+                <div class="detail">
+                  <h3 class="title">Nicolas - Interview 2022/23</h3>
+                  <div class="channel-name">IUT d'Orsay</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      <a class="item h" href="./html/page-video/p-david.html">
+          <div class="video-content-cover">
+            <div class="video-content">
+              <div class="video-box">
+                <img src="ressources/images/david.jpg" alt="" />
+              </div>
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="" alt="" />
+                </div>
+                <div class="detail">
+                  <h3 class="title">David - Interview 2022/23</h3>
+                  <div class="channel-name">IUT d'Orsay</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      <a class="item f" href="./html/page-video/p-aurelie.html">
+        <div class="video-content-cover">
+          <div class="video-content">
+            <div class="video-box">
+              <img src="ressources/images/aurelie.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="channel-logo">
+                <img src="ressources/logo/logo-upsud.jpg" alt="" />
+              </div>
+              <div class="detail">
+                <h3 class="title">Aurélie - Interview 2022/23</h3>
+                <div class="channel-name">IUT d'Orsay</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      <a class="item h" href="./html/page-video/p-charles.html">
+        <div class="video-content-cover">
+          <div class="video-content">
+            <div class="video-box">
+              <img src="ressources/images/jean-charles.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="channel-logo">
+                <img src="ressources/logo/logo-upsud.jpg" alt="" />
+              </div>
+              <div class="detail">
+                <h3 class="title">Charles - Interview 2022/23</h3>
+                <div class="channel-name">IUT d'Orsay</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
