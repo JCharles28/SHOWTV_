@@ -332,9 +332,9 @@ hr {
 }
 
 .chip {
-  margin: 12px 6px;
+  margin: 9px 6px;
   background-color: #373737;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   white-space: nowrap;
@@ -368,6 +368,7 @@ hr {
   overflow-y: scroll;
   height: 100%;
   align-items: center;
+  margin-bottom: 5%;
 }
 
 .container {
@@ -400,14 +401,14 @@ hr {
 .video-content {
   position: relative;
 
-  width: 100%;
+  width: 90%;
   border-radius: 5.5px;
   border: 2px groove white;
   padding-bottom: 8px;
 }
 
 .item {
-  margin: 9% 0;
+  margin: 3% 0;
 }
 
 .video-content:hover {
@@ -536,11 +537,11 @@ hr {
 
 .description-text {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  margin: 3%;
 }
 
 /* Page : Comédiens */
@@ -552,6 +553,8 @@ hr {
   border-radius: 20px 20px 2.5px 2.5px;
   border: 2px groove white;
   padding-bottom: 8px;
+  min-height: 250px;
+
 }
 
 .ctn-2 {
@@ -563,6 +566,7 @@ hr {
   display: flex;
   color: #fff;
   padding-top: 12px;
+  font-size: 7px;
 }
 
 .comedien-box {
@@ -570,6 +574,7 @@ hr {
   width: auto;
   height: 145px;
   display: block;
+  margin: 0 auto;
 }
 
 .comedien-box img {
