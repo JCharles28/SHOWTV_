@@ -523,7 +523,7 @@ hr {
 }
 
 .description-container {
-  border: 2.25px solid whitesmoke;
+  border: 1.75px solid whitesmoke;
   border-radius: 7px;
   padding: 17px;
   height: fit-content;
@@ -537,7 +537,7 @@ hr {
 
 .description-text {
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   text-align: center;
   align-items: center;
   justify-content: center;
