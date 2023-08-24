@@ -399,11 +399,15 @@ hr {
 
 .video-content {
   position: relative;
-  margin-bottom: 25px;
+
   width: 100%;
   border-radius: 5.5px;
   border: 2px groove white;
   padding-bottom: 8px;
+}
+
+.item {
+  margin: 9% 0;
 }
 
 .video-content:hover {
@@ -727,7 +731,7 @@ form {
 
   .description-container {
     padding: 10px;
-    min-height: 150px;
+    min-height: min-content;
     margin-top: 30px;
     width: 475px;
   }
@@ -770,7 +774,7 @@ form {
 
   .description-container {
     padding: 8px;
-    min-height: 150px;
+    min-height: min-content;
     margin: 30px 0;
     width: 475px;
   }
@@ -816,7 +820,6 @@ form {
 
   .description-container {
     padding: 6px;
-    min-height: 150px;
     width: 375px;
   }
 
@@ -858,7 +861,6 @@ form {
   }
 
   .video-content {
-    margin-bottom: 35px;
     width: 100%;
   }
 
@@ -889,7 +891,7 @@ form {
 
   .description-container {
     padding: 4px;
-    min-height: 100px;
+    min-height: min-content;
     max-width: 300px;
     width: 300px;
   }
@@ -932,7 +934,6 @@ form {
   }
 
   .video-content {
-    margin-bottom: 35px;
     width: 100%;
   }
   /* Page Contcat/ */
@@ -957,7 +958,6 @@ form {
 
   .description-container {
     padding: 6px;
-    min-height: 100px;
     max-width: 300px;
   }
 
