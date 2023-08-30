@@ -525,7 +525,7 @@ hr {
 .description-container {
   border: 1.75px solid whitesmoke;
   border-radius: 7px;
-  padding: 17px;
+  padding: 16px;
   height: fit-content;
   width: 350px;
   align-items: center;
@@ -537,7 +537,7 @@ hr {
 
 .description-text {
   color: #fff;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -550,11 +550,10 @@ hr {
   position: relative;
   margin-bottom: 25px;
   width: 100%;
-  border-radius: 20px 20px 2.5px 2.5px;
+  border-radius: 20px 20px 10px 10px;
   border: 2px groove white;
   padding-bottom: 8px;
   min-height: 250px;
-
 }
 
 .ctn-2 {
@@ -652,6 +651,28 @@ form {
 
 .space-btw {
   justify-content: space-between;
+}
+
+/* icons */
+
+.social-icons {
+  align-items: center;
+  text-align: center;
+  margin: 0px auto;
+}
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons a ion-icon {
+  color: #fff;
+  margin: 0 6px;
+  font-size: 28px;
+}
+
+.social-icons a ion-icon:hover {
+  scale: 1.25;
+text-decoration: 0 0 3px white;
 }
 
 /* Responsive */
@@ -901,11 +922,6 @@ form {
     width: 300px;
   }
 
-  .description-text {
-    font-size: 9px;
-    font-weight: 600;
-  }
-
   /* header */
   .logo-container {
     margin-left: -15px;
@@ -966,10 +982,6 @@ form {
     max-width: 300px;
   }
 
-  .description-text {
-    font-size: 9px;
-    font-weight: 600;
-  }
   /* Page Contcat/ */
   .contact {
     margin-top: 2.5%;
