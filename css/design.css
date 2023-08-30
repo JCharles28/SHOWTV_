@@ -368,6 +368,7 @@ hr {
   overflow-y: scroll;
   height: 100%;
   align-items: center;
+  margin: 0px auto;
   margin-bottom: 5%;
 }
 
@@ -400,15 +401,16 @@ hr {
 
 .video-content {
   position: relative;
-
   width: 90%;
   border-radius: 5.5px;
   border: 2px groove white;
   padding-bottom: 8px;
+  margin: 0 auto;
+  margin-bottom: 20%;
 }
 
 .item {
-  margin: 3% 0;
+  margin: 1% 0;
 }
 
 .video-content:hover {
@@ -888,6 +890,7 @@ text-decoration: 0 0 3px white;
 
   .video-content {
     width: 100%;
+    margin-bottom: 18%;
   }
 
   .contact {
@@ -954,9 +957,6 @@ text-decoration: 0 0 3px white;
     width: 100%;
   }
 
-  .video-content {
-    width: 100%;
-  }
   /* Page Contcat/ */
   .contact {
     margin-top: 2.5%;
