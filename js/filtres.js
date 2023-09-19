@@ -12,13 +12,13 @@ function trierEtAfficher(elements) {
   tab.forEach(item => item.remove());
 }
 
-function filtrerParGenre(genre) {
-  const tabItems = Array.from(document.querySelectorAll(".item"));
-  const tabItemsGenre = Array.from(document.querySelectorAll("." + genre));
+// function filtrerParGenre(genre) {
+//   const tabItems = Array.from(document.querySelectorAll(".item"));
+//   const tabItemsGenre = Array.from(document.querySelectorAll("." + genre));
 
-  const elements = tabItemsGenre.length > 0 ? tabItemsGenre : tabItems;
-  trierEtAfficher(elements);
-}
+//   const elements = tabItemsGenre.length > 0 ? tabItemsGenre : tabItems;
+//   trierEtAfficher(elements);
+// }
 
 document.getElementById("AaZ").addEventListener("click", function () {
   const tabItems = Array.from(document.querySelectorAll(".item"));
@@ -30,10 +30,10 @@ document.getElementById("ZaA").addEventListener("click", function () {
   trierEtAfficher(tabItems.reverse());
 });
 
-document.getElementById("femmes").addEventListener("click", function () {
-  filtrerParGenre("f");
-});
+// document.getElementById("femmes").addEventListener("click", function () {
+//   filtrerParGenre("f");
+// });
 
-document.getElementById("hommes").addEventListener("click", function () {
-  filtrerParGenre("h");
-});
+// document.getElementById("hommes").addEventListener("click", function () {
+//   filtrerParGenre("h");
+// });
