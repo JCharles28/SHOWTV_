@@ -1,5 +1,5 @@
 function trierEtAfficher(elements) {
-  const videoContainer = document.querySelector(".video-container");
+  const videoContainer = document.querySelector(".item");
   const tab = elements.map(item => item.cloneNode(true));
 
   tab.sort((a, b) => {
