@@ -102,15 +102,29 @@ img {
 
 @keyframes shine {
   0% {
-    text-shadow: 0 0 10px black;
+    text-shadow: 3px 3px 12px black;
   }
 
   50% {
-    text-shadow: 0 0 10px white;
+    text-shadow: .5px .5px 12px white;
   }
 
   100% {
-    text-shadow: 0 0 10px black;
+    text-shadow: 3px 3px 12px black;
+  }
+}
+
+@keyframes lil-shine {
+  0% {
+    text-shadow: none;
+  }
+
+  50% {
+    text-shadow: .5px .5px 5px white;
+  }
+
+  100% {
+    text-shadow: none;
   }
 }
 
@@ -544,6 +558,30 @@ hr {
   align-items: center;
   justify-content: center;
   margin: 3%;
+}
+
+.description {
+  color: #fff;
+  font-size: 0.7rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+  animation: lil-shine 3s infinite linear;
+}
+
+
+
+@keyframes flash {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 5px 5px 30px white;
+  }
+  100%{
+    text-shadow: none;
+  }
 }
 
 /* Page : Comédiens */
